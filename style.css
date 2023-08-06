@@ -1,0 +1,242 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+    background-color: rgb(0, 0, 33);
+    color: aliceblue;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(18 18 64);
+    height: 83px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0px 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+}
+
+nav ul li a:hover {
+    color: rgb(126, 126, 175);
+    font-size: 1.04rem;
+}
+
+.sec1 {
+    font-size: 1.5rem;
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 83px 0px;
+}
+
+.firstsection>div {
+    width: 32%;
+    margin: 90px 0px;
+
+}
+
+
+.lefttsection {
+
+    width: 50%;
+    font-size: 3rem;
+}
+
+
+.lefttsection .btn1 .res ,.git {
+    padding: 4vh;
+    /* margin: 70px 11px; */
+    margin-top: 10%;
+    font-size: 1rem;
+    border-radius: 9px;
+    background-color: #835ba7c7;
+    color: #FAFAFA;
+    cursor: pointer;
+}
+
+.rightsection img {
+    width: 80%;
+    /* margin: 80px 10px; */
+}
+
+.purple {
+    color: rgb(157, 97, 213);
+}
+
+#element {
+    color: rgb(157, 97, 213);
+}
+
+main hr {
+    border: 0;
+    color: transparent;
+    background: #9c97f1;
+    height: 0.2rem;
+    margin: 40px 84px;
+}
+
+.hii {
+
+    text-align: center;
+}
+
+.secondsection {
+    max-width: 80vw;
+    width: 80%;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-evenly;
+}
+
+.container .box img{
+    /* position: relative; */
+    margin-bottom: 20px 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.container .box img:hover{
+    background-image: linear-gradient(rgb(64, 66, 67), rgb(64, 57, 67),rgb(65, 60, 63));
+
+}
+.box {
+    height: 400px;
+    width: 40%;
+    margin: 25px;
+    /* background-color: red; */
+    border: 2px solid rgb(92,83,96,1);
+}
+.box:hover {
+    
+    height: 400px;
+    width: 40%;
+    margin: 25px;
+    border: 2px solid rgb(156, 87, 186);
+}
+
+.name{
+    width: 500px;
+    /* margin: 0px 70px; */
+    font-size: 2rem;
+    /* background-color: aqua; */
+    font-weight: 300;
+    color: #f3ffaf;
+}
+.secondsection h1{
+    /* margin-left: 40px; */
+    /* color: red; */
+    font-size: 30px;
+    
+}
+.secondsection .email h1 a{
+    /* position: absolute; */
+    position: relative;
+    text-decoration: none;
+    color: #d0eade;
+}
+.secondsection .email h1 a img{
+    width: 90px;
+}
+.icon {
+    text-decoration: none;
+    font-size:35px;
+    /* margin: 20px 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-evenly; */
+
+}
+.icon i{
+    /* margin-left: 20px; */
+    color: red;
+    margin: 20px 20px;
+}
+.secondsection .about1{
+    /* color: red; */
+    font-size: 1.7rem;
+}
+@media screen and (max-width: 1200px) {
+    
+    .firstsection {
+        flex-direction: column-reverse;
+
+    }
+
+    .lefttsection {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rightsection {
+        width: 721px !important;
+        display: flex;
+        justify-content: center;
+    }
+
+    .rightsection img {
+        width: 45vw;
+        
+    }
+    .container{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width: 140vw;
+        height: auto;
+    }
+    .container .box img{
+        box-sizing: border-box;
+        background-size: cover;
+        width: 100%;
+        margin: 20px 20px;
+        height: 80%;    
+    }
+    .box{
+        width: 70% !important;
+        height: 2%;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center !important;
+        /* margin-left: 101px;
+        margin-bottom: 20px; */
+        flex-wrap: wrap;
+    }
+    header nav{
+        flex-direction: column;
+    }
+
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chetan's Protfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="sec1">My Protfolio</div>
+        <div class="sec2">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="#">Services</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstsection">
+        <div class="lefttsection">
+          <div class="hii">Hello...!</div>
+          My Name Is <span class="purple" style="display: inline-flexbox;">Chetan</span>
+          <div>
+            And I am passionate
+            <div>
+              <!-- which line want to animate -->
+              <span id="element"></span>
+            </div>
+          </div>
+          <div class="btn1">
+            <button class="res" onclick="resume()">Download Resume</button>
+            <button class="git" onclick="GitHub()">Visit Github</button>
+          </div>
+        </div>
+        <div class="rightsection">
+          <img src="PngItem_1127587.png" alt="" />
+        </div>
+      </section>
+
+      <hr />
+      <section class="secondsection">
+        <h1 id="project">My Projects :</h1>
+        <div class="container">
+          <div class="box2 box">
+            <a href="./spotify/spotify.html"
+              ><img src="CP.png" alt="" /><span class="name"
+                >Music Player</span
+              ></a
+            >
+          </div>
+
+          <div class="box2 box">
+            <a href="./Amazon_clone/amazon.html"
+              ><img src="pngegg.png" alt="" /><span class="name name2"
+                >E-Commerce Web App</span
+              ></a
+            >
+          </div>
+
+          <div class="box1 box">
+            <a href="./calculator/cal.html">
+              <img src="cp1.png" alt="" /><span class="name"
+                >Dynamic Calculator</span
+              ></a
+            >
+          </div>
+          <div class="box1 box">
+            <a href="/project/public/myprotfolio/sjdf/log_in_form_2.html"
+              ><img src="development.png" alt="" /><span class="name"
+                >Log In Page</span
+              ></a
+            >
+          </div>
+          <div class="box3 box">
+            <img src="PngItem_1127587.png" alt="" /><span class="name"></span>
+          </div>
+          <div class="box3 box">
+            <img src="weather.png" alt="" /><span class="name"
+              >Weather Forecast</span
+            >
+          </div>
+          <hr />
+        </div>
+
+        <div>
+          <hr />
+        </div>
+        <div id="About">
+            <h1>About</h1>
+            <br />
+        </div>
+        <div class="about1">
+          I possess a deep understanding of Java and am highly skilled in web
+          development, utilizing my knowledge to craft innovative and efficient
+          solutions. My expertise in SQL allows me to effortlessly handle
+          complex queries and manage databases effectively. Problem-solving is
+          second nature to me, and I approach challenges with a creative mind,
+          seeking unique and effective solutions. I am passionate about learning
+          and consistently strive to stay up-to-date with the latest
+          technologies, making me adaptable and flexible in tackling new
+          projects. With my proficiency in hoisting websites and my natural
+          inclination towards exploring new technologies, I am a valuable asset
+          in any technological endeavor, consistently delivering top-notch
+          results.
+        </div>
+        <hr />
+        <div id="contact">
+          <div><h1>Name : Chetan Chavan</h1></div>
+
+          <div class="email">
+            <h1>
+              Email :
+              <a href="mailto:"
+                >cc5032949@gmail.com
+                <i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </h1>
+            <h1>Phone no : <a href="tel:7767973361">7767973361</a></h1>
+          </div>
+          <div class="icon">
+            <a href="https://www.linkedin.com/in/chetan-chavan-003537251/"target="_blank"><i class="fa-brands fa-linkedin"></i></a
+            ><a href="https://github.com/Chaitanya0202"target="_blank"><i class="fa-brands fa-github"></i></a
+            ><a href="mailto:cc5032949@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <hr />
+      </section>
+    </main>
+
+    <!-- type js cdn  -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- using type js which is library of javascript -->
+    <script>
+      function resume() {
+        window.open(
+          "https://drive.google.com/file/d/14Cy8Dsqpmoh6aX1el3ozg7Cg3mwfxuzd/view?usp=sharing",
+          "_blank"
+        );
+      }
+      function GitHub() {
+        window.open("https://github.com/Chaitanya0202", "_blank");
+      }
+      var typed = new Typed("#element", {
+        strings: [
+          "<i></i> SQL Developer...",
+          " Java Developer...",
+          " Web Developer...",
+        ],
+        typeSpeed: 100,
+      });
+    </script>
+  </body>
+</html>
